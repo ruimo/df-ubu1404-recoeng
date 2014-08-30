@@ -7,5 +7,7 @@ RUN unzip -q recoeng-1.0-SNAPSHOT.zip
 
 EXPOSE 9001
 
+ADD start.sh /start.sh
+
 CMD ["recoeng-1.0-SNAPSHOT/bin/recoeng", "-Dhttp.port=9001"]
 
