@@ -1,2 +1,2 @@
 #!/bin/sh
-docker run -e "HOST_UID=`id -u`" -e "HOST_USER=$USER" -v $HOME:$HOME:rw -i -t ruimo/df-ubu1404-recoeng $*
+docker run -e 'TZ=Asia/Tokyo' --link redis:redis -p 9001:9001 -v /var/recoeng/logs:/recoeng-1.0-SNAPSHOT/logs:rw --name recoeng ruimo/df-ubu1404-recoeng $*
