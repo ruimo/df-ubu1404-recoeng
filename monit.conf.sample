@@ -1,0 +1,3 @@
+check program recoeng path /home/shanai/docker/df-ubu1404-recoeng/pingAndRestart.sh
+    if status > 0 then alert
+
